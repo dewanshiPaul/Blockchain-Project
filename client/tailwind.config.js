@@ -1,6 +1,6 @@
 module.exports = {
   mode: 'jit',
-  purge: [
+  content: [
     "./src/**/*.{js,jsx,ts,tsx}",
     "./public/index.html"
   ],
@@ -13,28 +13,17 @@ module.exports = {
       keyframes: {
         "slide-in": {
           "0%": {
-            "-webkit-transform": "translateX(120%)",
-            transform: "translateX(120%)",
+            "-webkit-transform": "translateX(100%)",
+            transform: "translateX(100%)",
           },
           "100%": {
             "-webkit-transform": "translateX(0%)",
             transform: "translateX(0%)",
-          }
-        },
-        "slide-out": {
-          "0%": {
-            "-webkit-transform": "translateX(0%)",
-            transform: "translateX(0%)",
-          },
-          "100%": {
-            "-webkit-transform": "translateX(120%)",
-            transform: "translateX(120%)",
           }
         },
       },
       animation: {
-        "slide-in": "slide-in 0.2s ease-in-out",
-        "slide-out": "slide-in 0.2s ease-in-out",
+        "slide-in": "slide-in 1s ease-out",
       }
     },
     fontFamily: {

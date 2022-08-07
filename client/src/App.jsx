@@ -1,4 +1,4 @@
-import { Navbar, Loader, Services, Transactions, Welcome} from './componets/index'; 
+import { Navbar, Loader, Services, _Transactions, Welcome} from './componets/index'; 
 
 function App() {
 
@@ -9,7 +9,7 @@ function App() {
           <Welcome />
         </div>
         <Services />
-        <Transactions />
+        <_Transactions />
     </div>
   )
 }
